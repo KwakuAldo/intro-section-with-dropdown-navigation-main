@@ -17,100 +17,116 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="">
-  <nav class="flex flex-row justify-between items-center p-5">
-    <div class="flex justify-between w-80 ">
-      <img class="mt-3" src="images/logo.svg" alt="snap logo">
-      <div class="flex items-center">
-        <ul class="flex flex-row items-center w-[32rem]">
-          <li class="ml-14 text-mediumGray">
-            <a class="flex items-center" id="dropDown-btn" href="#">Features
-              <img class="ml-2" src="images/icon-arrow-down.svg" alt="down pointing arrow">
-            </a>
-          </li>
+<body>
+  <header class="flex w-screen relative justify-between py-6 px-5 lg:flex-row items-center lg:p-5 lg:w-screen">
+    <img class="mt-3" src="images/logo.svg" alt="snap logo">
+    <button class="flex lg:hidden">
+      <img id="hamburger-menu" src="images/icon-menu.svg" alt="hamburger menu">
+    </button>
+    <nav class="hidden absolute lg:flex top-0 right-0 lg:static lg:top-auto lg:right-auto w-64  h-screen lg:h-auto justify-between lg:w-full bg-almostWhite lg:bg-transparent z-20" id="navbar">
+      
+      <div class=" flex flex-col lg:flex-row mt-[1.875rem] lg:mt-0 lg:justify-between font-medium pl-5 pr-5 lg:pr-[0.25rem] lg:w-full">
+        <button class="flex self-end lg:hidden">
+          <img src="images/icon-close-menu.svg" alt="close menu icon" id="close-menu">
+        </button>
+          <div class="flex flex-col items-start mt-7">
+            <div class="flex lg:items-center">
+              <ul class="flex flex-col lg:flex-row lg:items-center lg:w-[32rem]">
+                <li class="lg:ml-14 mb-6 text-mediumGray">
+                  <a class="flex items-center hover:font-bold active:font-bold" id="dropDown-btn" href="#">Features
+                    <img class="ml-2" src="images/icon-arrow-down.svg" alt="down pointing arrow">
+                  </a>
+                  <ul
+                    class="hidden flex-col lg:items-center w-40 p-4 lg:border lg:border-white lg:rounded-xl bg-almostWhite lg:absolute lg:top-20 lg:left-[8.25rem] lg:shadow-blue"
+                    id="feature-li">
+                    <li class="flex items-center w-[7rem] mx-auto mb-6">
+                      <img src="images/icon-todo.svg" alt="">
+                      <a class="ml-4 hover:font-bold " href="#">Todo List</a>
+                    </li>
+                    <li class="flex items-center w-[7rem] mx-auto mb-6">
+                      <img src="images/icon-calendar.svg" alt="">
+                      <a class="ml-4 hover:font-bold " href="#">Calendar</a>
+                    </li>
+                    <li class="flex items-center w-[7rem] mx-auto mb-6">
+                      <img src="images/icon-reminders.svg" alt="">
+                      <a class="ml-4 hover:font-bold " href="#">Reminders</a>
+                    </li>
+                    <li class="flex items-center w-[7rem] mx-auto">
+                      <img src="images/icon-planning.svg" alt="">
+                      <a class="ml-4 hover:font-bold " href="#">Planning</a>
+                    </li>
+                  </ul>
+                </li>
+                  
+                <li class="lg:ml-14 mb-6 text-mediumGray">
+                  <a class="flex items-center hover:font-bold " id="dropDown-btn2" href="#">Company
+                    <img class="ml-2" src="images/icon-arrow-down.svg" alt="down pointing arrow">
+                  </a>
+                  <ul class="hidden flex-col p-4 w-[7.5rem] lg:absolute lg:top-20 lg:left-72 lg:bg-almostWhite lg:rounded-xl lg:shadow-blue" id="company-li">
+                    <li class="mb-6">
+                      <a href="#" class="hover:font-bold ">History</a>
+                    </li>
+                    <li class="mb-6">
+                      <a href="#" class="hover:font-bold ">Our Team</a>
+                    </li>
+                    <li class="">
+                      <a href="#" class="hover:font-bold ">Blog</a>
+                    </li>
+                  </ul>
+                </li>
             
-          <li class="ml-14 text-mediumGray">
-            <a class="flex items-center" id="dropDown-btn2" href="#">Company
-              <img class="ml-2" src="images/icon-arrow-down.svg" alt="down pointing arrow">
-            </a>
-          </li>
-          
-          <li class="ml-14 text-mediumGray">
-            <a href="#">Careers</a>
-          </li>
-          <li class="ml-14 text-mediumGray"><a href="#">About</a></li>
-        </ul>
+                <li class="lg:ml-14 mb-6 text-mediumGray">
+                  <a href="#" class="hover:font-bold ">Careers</a>
+                </li>
+                <li class="lg:ml-14 mb-6 text-mediumGray">
+                  <a href="#" class="hover:font-bold ">About</a>
+                </li>
+              </ul>
+            </div>
+  
+          </div>
+          <div class="flex justify-center">
+            <div class="flex flex-col items-center lg:flex-row lg:justify-between w-40 lg:w-80 ">
+              <a class="hover:font-bold text-mediumGray mb-4 lg:mb-0" href="#">Login</a>
+              <button class="text-mediumGray w-52 p-3 border border-mediumGray rounded-2xl hover:border-2 hover:font-bold">Register</button>
+            </div>
+          </div>
       </div>
-      <div class="flex">
-        <ul class="hidden flex-col items-center w-40 p-4 border border-white rounded-xl bg-almostWhite absolute top-[4rem] left-[6.25rem] shadow" id="feature-li">
-          <li class="flex items-center w-[7rem] mx-auto mb-[0.8rem]">
-            <img src="images/icon-todo.svg" alt="">
-            <a class="ml-4" href="#">Todo List</a>
-          </li>
-          <li class="flex items-center w-[7rem] mx-auto mb-[0.8rem]">
-            <img src="images/icon-calendar.svg" alt="">
-            <a class="ml-4" href="#">Calendar</a>
-          </li>
-          <li class="flex items-center w-[7rem] mx-auto mb-[0.8rem]">
-            <img src="images/icon-reminders.svg" alt="">
-            <a class="ml-4" href="#">Reminders</a>
-          </li>
-          <li class="flex items-center w-[7rem] mx-auto">
-            <img src="images/icon-planning.svg" alt="">
-            <a class="ml-4" href="#">Planning</a>
-          </li>
-        </ul>
-        <ul class="hidden flex-col p-4 w-[7.5rem] absolute top-[4rem] left-72 bg-almostWhite rounded-xl shadow" id="company-li">
-          <li class="mb-[0.8rem]">
-            <a href="#">History</a>
-          </li>
-          <li class="mb-[0.8rem]">
-            <a href="#">Our Team</a>
-          </li>
-          <li class="">
-            <a href="#">Blog</a>
-          </li>
-        </ul>
+      <div class="md:flex">
+        
+        
       </div>
-    </div>
-    <div>
-      <ul class="flex flex-row justify-around w-40">
-        <li class="text-mediumGray"><a href="#">Login</a></li>
-        <li class="text-mediumGray"><a href="#">Register</a></li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <main class="flex justify-between py-12 px-24">
-    <section class="flex flex-col justify- text-start w-[628px]">
-      <h1 class="text-[5.5rem] font-bold mt-24 ml-24 leading-none">Make remote work</h1>
-      <article class="mt-16 ml-24">
-        <p class="text-mediumGray text-xl w-[26.188rem] max-w[31.25]">Get your team in sync, no matter your location. Streamline processes,
+  <main class="flex flex-wrap-reverse md:justify-between md:py-12 md:px-24">
+    <section class="flex flex-col text-center md:text-start w-[39.25rem] mt-12">
+      <h1 class="text-[2.5rem] md:text-[5.5rem] font-bold md:mt-24 md:ml-24 leading-none">Make remote work</h1>
+      <article class="mt-4 md:mt-16 md:ml-24">
+        <p class="text-mediumGray text-center lg:text-left text-xl w-[26.188rem] max-w[31.25] px-[0.938rem] py-1 lg:px-0 lg:py-0">Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
       </article>
-      <button class=" mt-16 ml-[6rem] w-[10rem] h-12 bg-almostBlack text-almostWhite py-[0.8rem] px-3 rounded hover:bg-almostWhite hover:text-almostBlack hover:border-almostBlack hover:border-[1px]">Learn more</button>
-      <div class="flex mt-16 ml-20 items-center justify-around">
-        <img src="images/client-databiz.svg" alt="">
-        <img src="images/client-audiophile.svg" alt="">
-        <img src="images/client-meet.svg" alt="">
-        <img src="images/client-maker.svg" alt="">
+      <button class="mt-8 self-center lg:self-start rounded-2xl md:mt-16 md:ml-[6rem] w-[10rem] h-12 bg-almostBlack text-almostWhite py-[0.8rem] px-3 md:rounded hover:bg-almostWhite hover:text-almostBlack hover:border-almostBlack hover:border-[1px]">Learn more</button>
+      <div class="flex mt-16 md:ml-20 items-center justify-around">
+        <img class="w-[15%]" src="images/client-databiz.svg" alt="">
+        <img class="w-[15%]" src="images/client-audiophile.svg" alt="">
+        <img class="w-[15%]" src="images/client-meet.svg" alt="">
+        <img class="w-[15%]" src="images/client-maker.svg" alt="">
       </div>
     </section>
     <section>
-      <img class="lg:min-w-[29rem] md:w-96" src="images/image-hero-desktop.png" alt="man with typing on a laptop with one hand while he holds it with the other hand">
+      <img class="md:min-w-[29rem] md:md:w-96" id="hero-img" src="images/image-hero-desktop.png" alt="man typing on a laptop with one hand while he holds it with the other hand">
     </section>
   </main>
-  
-
-  
-
-  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/KwakuAldo" target="_blank">Aldo Efui Adabunu</a>.
   </div>
 
+  <!-- <div class="fixed inset-0 bg-almostBlack bg-opacity-50 z-10 hidden" id="overlay"> -->
+
+  </div>
   <script src="script/index.js"></script>
 </body>
 </html>
