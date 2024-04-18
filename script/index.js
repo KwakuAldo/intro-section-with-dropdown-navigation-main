@@ -3,24 +3,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const companyBtn = document.getElementById('dropDown-btn2')
     const featureList = document.getElementById('feature-li')
     const companyList = document.getElementById('company-li')
-    const menuBtn = document.getElementById('hamburger-menu')
+    const menuBtn = document.getElementById('nav-toggle')
+    const menuIcon = document.getElementById('menu-icon')
     const nav = document.getElementById('navbar')
-    const closeMenu = document.getElementById('close-menu')
 
     //Hamburger menu open
     menuBtn.addEventListener('click', function () {
+        let isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', !isOpen);
+        menuIcon.src = isOpen ? 'images/icon-menu.svg' : 'images/icon-close-menu.svg';
         nav.classList.toggle('hidden')
 
         //overlay visibility
         document.getElementById('overlay').classList.toggle('hidden')
-    })
-
-    //Hamburger menu close
-    closeMenu.addEventListener('click', function () {
-        nav.classList.add('hidden')
-
-        //overlay visibility
-        document.getElementById('overlay').classList.add('hidden')
     })
 
     // toggle submenu element

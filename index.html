@@ -20,15 +20,12 @@
 <body>
   <header class="flex w-screen relative justify-between py-6 px-5 lg:flex-row items-center lg:p-5 lg:w-screen">
     <img class="mt-3" src="images/logo.svg" alt="snap logo">
-    <button class="flex lg:hidden">
-      <img id="hamburger-menu" src="images/icon-menu.svg" alt="hamburger menu">
+    <button class="flex lg:hidden z-30" aria-expanded="false" id="nav-toggle" aria-label="navigation toggle">
+      <img src="images/icon-menu.svg" alt="" id="menu-icon">
     </button>
     <nav class="hidden absolute lg:flex top-0 right-0 lg:static lg:top-auto lg:right-auto w-64  h-screen lg:h-auto justify-between lg:w-full bg-almostWhite lg:bg-transparent z-20" id="navbar">
-      
       <div class=" flex flex-col lg:flex-row mt-[1.875rem] lg:mt-0 lg:justify-between font-medium pl-5 pr-5 lg:pr-[0.25rem] lg:w-full">
-        <button class="flex self-end lg:hidden">
-          <img src="images/icon-close-menu.svg" alt="close menu icon" id="close-menu">
-        </button>
+        
           <div class="flex flex-col items-start mt-7">
             <div class="flex lg:items-center">
               <ul class="flex flex-col lg:flex-row lg:items-center lg:w-[32rem]">
@@ -88,25 +85,21 @@
           <div class="flex justify-center">
             <div class="flex flex-col items-center lg:flex-row lg:justify-between w-40 lg:w-80 ">
               <a class="hover:font-bold text-mediumGray mb-4 lg:mb-0" href="#">Login</a>
-              <button class="text-mediumGray w-52 p-3 border border-mediumGray rounded-2xl hover:border-2 hover:font-bold">Register</button>
+              <a href="#" class="text-mediumGray w-52 p-3 border border-mediumGray rounded-2xl hover:border-2 hover:font-bold">Register</a href="#">
             </div>
           </div>
-      </div>
-      <div class="md:flex">
-        
-        
       </div>
     </nav>
   </header>
 
   <main class="flex flex-wrap-reverse md:justify-between md:py-12 md:px-24">
-    <section class="flex flex-col text-center md:text-start w-[39.25rem] mt-12">
+    <section class="flex flex-col text-center md:text-start md:w-[39.25rem] mt-12">
       <h1 class="text-[2.5rem] md:text-[5.5rem] font-bold md:mt-24 md:ml-24 leading-none">Make remote work</h1>
-      <article class="mt-4 md:mt-16 md:ml-24">
-        <p class="text-mediumGray text-center lg:text-left text-xl w-[26.188rem] max-w[31.25] px-[0.938rem] py-1 lg:px-0 lg:py-0">Get your team in sync, no matter your location. Streamline processes,
+      <div class="mt-4 md:mt-16 md:ml-24">
+        <p class="text-mediumGray text-center lg:text-left text-xl md:w-[26.188rem] max-w[31.25] px-[0.938rem] py-1 lg:px-0 lg:py-0">Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
-      </article>
-      <button class="mt-8 self-center lg:self-start rounded-2xl md:mt-16 md:ml-[6rem] w-[10rem] h-12 bg-almostBlack text-almostWhite py-[0.8rem] px-3 md:rounded hover:bg-almostWhite hover:text-almostBlack hover:border-almostBlack hover:border-[1px]">Learn more</button>
+      </div>
+      <a href="#" class="mt-8 self-center lg:self-start rounded-2xl md:mt-16 md:ml-[6rem] w-[10rem] h-12 bg-almostBlack text-almostWhite py-[0.8rem] px-3 md:rounded hover:bg-almostWhite hover:text-almostBlack hover:border-almostBlack hover:border-[1px]">Learn more</a> 
       <div class="flex mt-16 md:ml-20 items-center justify-around">
         <img class="w-[15%]" src="images/client-databiz.svg" alt="">
         <img class="w-[15%]" src="images/client-audiophile.svg" alt="">
@@ -117,15 +110,15 @@
     <section>
       <img class="md:min-w-[29rem] md:md:w-96" id="hero-img" src="images/image-hero-desktop.png" alt="man typing on a laptop with one hand while he holds it with the other hand">
     </section>
-  </main>
+
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/KwakuAldo" target="_blank">Aldo Efui Adabunu</a>.
-  </div>
-
-  <!-- <div class="fixed inset-0 bg-almostBlack bg-opacity-50 z-10 hidden" id="overlay"> -->
-
+  </footer>
+  
   </div>
   <script src="script/index.js"></script>
 </body>
