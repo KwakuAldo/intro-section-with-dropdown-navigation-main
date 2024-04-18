@@ -14,9 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
         menuIcon.src = isOpen ? 'images/icon-menu.svg' : 'images/icon-close-menu.svg';
         nav.classList.toggle('hidden')
 
-        //overlay visibility
-        document.getElementById('overlay').classList.toggle('hidden')
+        // Esc key listener
+        if (!isOpen) {
+            document.addEventListener('keydown', escKeyListener);
+        } else {
+            document.removeEventListener('keydown', escKeyListener);
+        }
+
+        function escKeyListener(event) {
+            if (event.key === 'Escape') {
+                if (menuBtn.getAttribute('aria-expanded') === 'true') {
+                    menuBtn.click();
+                }
+            }
+        }
     })
+
 
     // toggle submenu element
     function toggleMenu(anchor, listElement) {
