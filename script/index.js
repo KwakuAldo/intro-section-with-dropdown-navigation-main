@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const companyList = document.getElementById('company-li')
     const menuBtn = document.getElementById('nav-toggle')
     const menuIcon = document.getElementById('menu-icon')
-    const nav = document.getElementById('navbar')
+    const nav = document.getElementById('nav-items')
 
     //Hamburger menu open
     menuBtn.addEventListener('click', function () {

@@ -18,13 +18,13 @@
   </style>
 </head>
 <body>
-  <header class="flex relative justify-between py-6 px-5 lg:flex-row items-center lg:p-5 lg:w-screen">
-    <img class="mt-3" src="images/logo.svg" alt="snap company logo">
-    <button class="flex lg:hidden z-30" aria-expanded="false" id="nav-toggle" aria-label="navigation toggle">
-      <img src="images/icon-menu.svg" alt="" id="menu-icon">
-    </button>
-    <nav class="hidden absolute lg:flex top-0 right-0 lg:static lg:top-auto lg:right-auto w-64  h-screen lg:h-auto justify-between lg:w-full bg-almostWhite lg:bg-transparent z-20" id="navbar">
-      <div class=" flex flex-col lg:flex-row mt-[1.875rem] lg:mt-0 lg:justify-between font-medium pl-5 pr-5 lg:pr-[0.25rem] lg:w-full">
+  <header class="flex justify-between pt-6 px-5 lg:flex-row items-center lg:p-5 lg:w-screen">
+    <img class="inline mt-3" src="images/logo.svg" alt="snap company logo">
+    <nav class="inline-flex flex-col relative w-64 lg:h-auto justify-between lg:w-full lg:bg-transparent z-20" id="navbar">
+      <button class="flex self-end lg:hidden z-30" aria-expanded="false" aria-controls="nav-items" id="nav-toggle" aria-label="navigation toggle">
+        <img src="images/icon-menu.svg" alt="" id="menu-icon">
+      </button>
+      <div class="hidden absolute lg:flex -top-8 -right-5 w-[96%] h-screen lg:static lg:top-auto lg:right-auto flex-col lg:flex-row mt-[1.875rem] lg:mt-0 lg:justify-between font-medium pl-5 pr-5 lg:pr-[0.25rem] lg:w-full bg-almostWhite" id="nav-items">
         
           <div class="flex flex-col items-start mt-7">
             <div class="flex lg:items-center">
@@ -99,7 +99,7 @@
         <p class="text-mediumGray text-center lg:text-left text-xl md:w-[26.188rem] max-w[31.25] px-[0.938rem] py-1 lg:px-0 lg:py-0">Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
       </div>
-      <a href="#" target="_blank" class="mt-8 self-center lg:self-start rounded-2xl md:mt-16 md:ml-[6rem] w-[10rem] h-12 bg-almostBlack text-almostWhite text-center py-[0.8rem] px-3 md:rounded hover:bg-almostWhite hover:text-almostBlack hover:border-almostBlack hover:border-[1px]"><span class="hidden">Opens in a new tab</span>Learn more</a> 
+      <a href="#" target="_blank" class="mt-8 self-center lg:self-start rounded-2xl md:mt-16 md:ml-[6rem] w-[10rem] bg-almostBlack text-almostWhite text-center py-[0.8rem] px-3 md:rounded hover:bg-almostWhite hover:text-almostBlack hover:border-almostBlack hover:border-[1px]"><span class="hidden">Opens in a new tab</span>Learn more</a> 
       <div class="flex mt-16 md:ml-20 items-center justify-around">
         <img class="w-[15%]" src="images/client-databiz.svg" alt="">
         <img class="w-[15%]" src="images/client-audiophile.svg" alt="">
