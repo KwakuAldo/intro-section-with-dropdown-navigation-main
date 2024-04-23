@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
         menuIcon.src = isOpen ? 'images/icon-menu.svg' : 'images/icon-close-menu.svg';
         nav.classList.toggle('hidden')
 
+        document.body.style.overflow = isOpen ? 'visible' : 'hidden';
+
         // Esc key listener
         if (!isOpen) {
             document.addEventListener('keydown', escKeyListener);
