@@ -544,20 +544,28 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .-right-5 {
@@ -639,10 +647,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-12 {
-  height: 3rem;
 }
 
 .h-screen {
@@ -762,11 +766,6 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .py-\[0\.8rem\] {
@@ -931,8 +930,8 @@ video {
     left: 18rem;
   }
 
-  .lg\:left-\[8\.25rem\] {
-    left: 8.25rem;
+  .lg\:left-\[2rem\] {
+    left: 2rem;
   }
 
   .lg\:right-auto {
@@ -945,6 +944,10 @@ video {
 
   .lg\:top-auto {
     top: auto;
+  }
+
+  .lg\:left-48 {
+    left: 12rem;
   }
 
   .lg\:mb-0 {

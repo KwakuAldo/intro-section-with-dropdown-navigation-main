@@ -24,59 +24,59 @@
       <button class="flex self-end lg:hidden z-30" aria-expanded="false" aria-controls="nav-items" id="nav-toggle" aria-label="navigation toggle">
         <img src="images/icon-menu.svg" alt="" id="menu-icon">
       </button>
-      <div class="hidden absolute lg:flex -top-8 -right-5 w-[96%] h-screen lg:static lg:top-auto lg:right-auto flex-col lg:flex-row mt-[1.875rem] lg:mt-0 lg:justify-between font-medium pl-5 pr-5 lg:pr-[0.25rem] lg:w-full bg-almostWhite" id="nav-items">
+      <div class="hidden absolute lg:flex -top-8 -right-5 w-[96%] h-screen lg:static lg:top-auto lg:right-auto flex-col lg:flex-row mt-[1.875rem] lg:h-auto lg:mt-0 lg:justify-between font-medium pl-5 pr-5 lg:pr-[0.25rem] lg:w-full bg-almostWhite" id="nav-items">
         
           <div class="flex flex-col items-start mt-7">
             <div class="flex lg:items-center">
               <ul class="flex flex-col lg:flex-row lg:items-center lg:w-[32rem]">
                 <li class="lg:ml-14 mb-6 text-mediumGray">
-                  <a class="flex items-center" id="dropDown-btn" href="#">Features
+                  <button class="flex items-center" id="dropDown-btn">Features
                     <img class="ml-2" src="images/icon-arrow-down.svg" alt="down pointing arrow">
-                  </a>
+                  </button>
                   <ul
-                    class="hidden flex-col lg:items-center w-40 p-4 lg:border lg:border-white lg:rounded-xl bg-almostWhite lg:absolute lg:top-20 lg:left-[8.25rem] lg:shadow-blue"
+                    class="hidden flex-col lg:items-center w-40 p-4 lg:border lg:border-white lg:rounded-xl bg-almostWhite lg:absolute lg:top-20 lg:left-[2rem] lg:shadow-blue"
                     id="feature-li">
                     <li class="flex items-center mx-auto mb-6">
                       <img src="images/icon-todo.svg" alt="">
-                      <a class="ml-4 " href="#">Todo List</a>
+                      <a class="ml-4" href="#" target="_blank"><span class="invisible sr-only">Opens in new tab</span>Todo List</a>
                     </li>
                     <li class="flex items-center mx-auto mb-6">
                       <img src="images/icon-calendar.svg" alt="">
-                      <a class="ml-4 " href="#">Calendar</a>
+                      <a class="ml-4" href="#" target="_blank"><span class="invisible sr-only">Opens in new tab</span>Calendar</a>
                     </li>
                     <li class="flex items-center mx-auto mb-6">
                       <img src="images/icon-reminders.svg" alt="">
-                      <a class="ml-4 " href="#">Reminders</a>
+                      <a class="ml-4" href="#" target="_blank"><span class="invisible sr-only">Opens in new tab</span>Reminders</a>
                     </li>
                     <li class="flex items-center mx-auto">
                       <img src="images/icon-planning.svg" alt="">
-                      <a class="ml-4 " href="#">Planning</a>
+                      <a class="ml-4" href="#" target="_blank"><span class="invisible sr-only">Opens in new tab</span>Planning</a>
                     </li>
                   </ul>
                 </li>
                   
                 <li class="lg:ml-14 mb-6 text-mediumGray">
-                  <a class="flex items-center" id="dropDown-btn2" href="#">Company
+                  <button class="flex items-center" id="dropDown-btn2">Company
                     <img class="ml-2" src="images/icon-arrow-down.svg" alt="down pointing arrow">
-                  </a>
-                  <ul class="hidden flex-col p-4 w-[7.5rem] lg:absolute lg:top-20 lg:left-72 lg:bg-almostWhite lg:rounded-xl lg:shadow-blue" id="company-li">
+                  </button>
+                  <ul class="hidden flex-col p-4 w-[7.5rem] lg:absolute lg:top-20 lg:left-48 lg:bg-almostWhite lg:rounded-xl lg:shadow-blue" id="company-li">
                     <li class="mb-6">
-                      <a href="#" class="">History</a>
+                      <a href="#" target="_blank" class=""><span class="invisible sr-only">Opens in new tab</span>History</a>
                     </li>
                     <li class="mb-6">
-                      <a href="#" class="">Our Team</a>
+                      <a href="#" target="_blank" class=""><span class="invisible sr-only">Opens in new tab</span>Our Team</a>
                     </li>
                     <li class="">
-                      <a href="#" class="">Blog</a>
+                      <a href="#" target="_blank" class=""><span class="invisible sr-only">Opens in new tab</span>Blog</a>
                     </li>
                   </ul>
                 </li>
             
                 <li class="lg:ml-14 mb-6 text-mediumGray">
-                  <a href="#" class="">Careers</a>
+                  <button class="">Careers</button>
                 </li>
                 <li class="lg:ml-14 mb-6 text-mediumGray">
-                  <a href="#" class="">About</a>
+                  <button class="">About</button>
                 </li>
               </ul>
             </div>
@@ -84,15 +84,15 @@
           </div>
           <div class="flex justify-center">
             <div class="flex flex-col items-center lg:flex-row lg:justify-between w-40 lg:w-80 ">
-              <a class="hover:font-bold text-mediumGray mb-4 lg:mb-0" href="#" target="_blank"><span class="hidden">Opens in a new tab</span>Login</a>
-              <a href="#" class="text-mediumGray text-center w-52 p-3 border border-mediumGray rounded-2xl hover:border-2 hover:font-bold" target="_blank"><span class="hidden">Opens in a new tab</span>Register</a href="#">
+              <a class="hover:font-bold text-mediumGray mb-4 lg:mb-0" href="#" target="_blank"><span class="invisible">Opens in a new tab</span>Login</a>
+              <a href="#" class="text-mediumGray text-center w-52 p-3 border border-mediumGray rounded-2xl hover:border-2 hover:font-bold" target="_blank"><span class="invisible sr-only">Opens in a new tab</span>Register</a href="#">
             </div>
           </div>
       </div>
     </nav>
   </header>
 
-  <main class="flex flex-wrap-reverse md:justify-between md:py-12 md:px-24">
+  <main class="flex flex-wrap-reverse mt-8 md:justify-between md:py-12 md:px-24">
     <section class="flex flex-col text-center md:text-start md:w-[39.25rem] mt-12">
       <h1 class="text-[2.5rem] md:text-[5.5rem] font-bold md:mt-24 md:ml-24 leading-none">Make remote work</h1>
       <div class="mt-4 md:mt-16 md:ml-24">
