@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // toggle submenu element
     function toggleMenu(anchor, listElement) {
+        listElement.classList.toggle('hidden')
         const img = anchor.querySelector('img')
         if (img.src.includes('icon-arrow-down.svg')) {
             img.src = 'images/icon-arrow-up.svg';
         } else {
             img.src = 'images/icon-arrow-down.svg';
         }
-        listElement.classList.toggle('hidden')
     }
 
     function hideMenus() {
@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
             companyBtnImg.src = 'images/icon-arrow-down.svg';
             companyList.classList.add('hidden')
         }
+
+    
+
     }
 
     featureBtn.addEventListener('click', function () {
@@ -65,6 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
             companyList.classList.add('hidden')
             hideMenus()
         }
+
+        
     })
 
     companyBtn.addEventListener('click', function () {
@@ -75,13 +80,18 @@ document.addEventListener('DOMContentLoaded', function() {
             featureList.classList.add('hidden')
             hideMenus()
         }
+
+    
     });
 
     document.body.addEventListener('click', function (event) {
         if (!event.target.closest('#dropDown-btn')
             && !event.target.closest('feature-li')
-            && !event.target.closest('#dropDown-btn2') && !event.target.closest('company-li')) {
+            && !event.target.closest('#dropDown-btn2') 
+            && !event.target.closest('company-li')) {
             hideMenus()
+        } else {
+            toggleMenu(event.target);
         }
     })
 

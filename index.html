@@ -18,7 +18,7 @@
   </style>
 </head>
 <body>
-  <header class="flex justify-between pt-6 px-5 lg:flex-row items-center lg:p-5 lg:w-screen">
+  <header class="flex justify-between pt-6 px-5 lg:flex-row items-center lg:p-5">
     <img class="inline mt-3" src="images/logo.svg" alt="snap company logo">
     <nav class="inline-flex flex-col relative w-64 lg:h-auto justify-between lg:w-full lg:bg-transparent z-20" id="navbar">
       <button class="flex self-end lg:hidden z-30" aria-expanded="false" aria-controls="nav-items" id="nav-toggle" aria-label="navigation toggle">
@@ -26,40 +26,48 @@
       </button>
       <div class="hidden absolute lg:flex -top-8 -right-5 w-[96%] h-screen lg:static lg:top-auto lg:right-auto flex-col lg:flex-row lg:h-auto lg:mt-0 lg:justify-between font-medium pl-5 pr-5 lg:pr-[0.25rem] lg:w-full bg-almostWhite" id="nav-items">
         
-          <div class="flex flex-col items-start pt-24">
+          <div class="flex flex-col items-start pt-24 lg:justify-center lg:pt-0">
             <div class="flex lg:items-center">
-              <ul class="flex flex-col lg:flex-row lg:items-center lg:w-[32rem]">
-                <li class="lg:ml-14 mb-6 text-mediumGray">
-                  <button class="flex items-center" id="dropDown-btn">Features
-                    <img class="ml-2" src="images/icon-arrow-down.svg" alt="down pointing arrow">
+              <ul class="flex flex-col lg:flex-row lg:justify-around lg:items-center lg:w-[32rem]">
+                <li class="mb-6 lg:mb-0 text-mediumGray">
+                  <button class="flex items-center" id="dropDown-btn" aria-expanded="false">Features
+                    <img class="ml-2" src="images/icon-arrow-down.svg" alt="">
                   </button>
                   <ul
-                    class="hidden flex-col lg:items-center w-40 p-4 lg:border lg:border-white lg:rounded-xl bg-almostWhite lg:absolute lg:top-20 lg:left-[2rem] lg:shadow-blue"
+                    class="hidden flex-col p-4 space-y-4 lg:items-center w-40 lg:border lg:border-white lg:rounded-xl bg-almostWhite lg:absolute lg:top-16 lg:left-0 lg:shadow-blue"
                     id="feature-li">
-                    <li class="flex items-center mx-auto mb-6">
-                      <img src="images/icon-todo.svg" alt="">
-                      <a class="ml-4" href="#" target="_blank"><span class="invisible sr-only">Opens in new tab</span>Todo List</a>
-                    </li>
-                    <li class="flex items-center mx-auto mb-6">
-                      <img src="images/icon-calendar.svg" alt="">
-                      <a class="ml-4" href="#" target="_blank"><span class="invisible sr-only">Opens in new tab</span>Calendar</a>
-                    </li>
-                    <li class="flex items-center mx-auto mb-6">
-                      <img src="images/icon-reminders.svg" alt="">
-                      <a class="ml-4" href="#" target="_blank"><span class="invisible sr-only">Opens in new tab</span>Reminders</a>
+                    <li class="flex items-center mx-auto">
+                      
+                      <a class="lg:ml-0 flex gap-4 items-center" href="#" target="_blank">
+                        <img src="images/icon-todo.svg" alt="">
+                        <span class="invisible sr-only">Opens in new tab</span>Todo List</a>
                     </li>
                     <li class="flex items-center mx-auto">
-                      <img src="images/icon-planning.svg" alt="">
-                      <a class="ml-4" href="#" target="_blank"><span class="invisible sr-only">Opens in new tab</span>Planning</a>
+                      
+                      <a class="lg:ml-0 flex gap-4 items-center" href="#" target="_blank">
+                        <img src="images/icon-calendar.svg" alt="">
+                        <span class="invisible sr-only">Opens in new tab</span>Calendar</a>
+                    </li>
+                    <li class="flex items-center mx-auto">
+                      
+                      <a class="lg:ml-0 flex gap-4 items-center" href="#" target="_blank">
+                        <img src="images/icon-reminders.svg" alt="">
+                        <span class="invisible sr-only">Opens in new tab</span>Reminders</a>
+                    </li>
+                    <li class="flex items-center mx-auto">
+                      
+                      <a class="lg:ml-0 flex gap-4 items-center" href="#" target="_blank">
+                        <img src="images/icon-planning.svg" alt="">
+                        <span class="invisible sr-only">Opens in new tab</span>Planning</a>
                     </li>
                   </ul>
                 </li>
                   
-                <li class="lg:ml-14 mb-6 text-mediumGray">
-                  <button class="flex items-center" id="dropDown-btn2">Company
-                    <img class="ml-2" src="images/icon-arrow-down.svg" alt="down pointing arrow">
+                <li class="mb-6 lg:mb-0 text-mediumGray">
+                  <button class="flex items-center" id="dropDown-btn2" aria-expanded="false">Company
+                    <img class="ml-2" src="images/icon-arrow-down.svg" alt="">
                   </button>
-                  <ul class="hidden flex-col p-4 w-[7.5rem] lg:absolute lg:top-20 lg:left-48 lg:bg-almostWhite lg:rounded-xl lg:shadow-blue" id="company-li">
+                  <ul class="hidden flex-col p-4 w-[7.5rem] lg:absolute lg:top-16 lg:left-44 lg:bg-almostWhite lg:rounded-xl lg:shadow-blue" id="company-li">
                     <li class="mb-6">
                       <a href="#" target="_blank" class=""><span class="invisible sr-only">Opens in new tab</span>History</a>
                     </li>
@@ -72,18 +80,18 @@
                   </ul>
                 </li>
             
-                <li class="lg:ml-14 mb-6 text-mediumGray">
-                  <button class="">Careers</button>
+                <li class="mb-6 lg:mb-0 text-mediumGray">
+                  <a href="#" class="">Careers</a>
                 </li>
-                <li class="lg:ml-14 mb-6 text-mediumGray">
-                  <button class="">About</button>
+                <li class="mb-6 lg:mb-0 text-mediumGray">
+                  <a href="#" class="">About</a>
                 </li>
               </ul>
             </div>
   
           </div>
           <div class="flex justify-center">
-            <div class="flex flex-col items-center lg:flex-row lg:justify-between w-40 lg:w-[21rem]">
+            <div class="flex flex-col items-center lg:flex-row lg:justify-between w-40 lg:w-52">
               <a class="hover:font-bold text-mediumGray mb-4 lg:mb-0" href="#" target="_blank"><span class="invisible sr-only">Opens in a new tab</span>Login</a>
               <a href="#" class="text-mediumGray text-center py-3 px-8 border border-mediumGray rounded-2xl hover:border-2 hover:font-bold" target="_blank"><span class="invisible sr-only">Opens in a new tab</span>Register</a href="#">
             </div>
@@ -92,15 +100,15 @@
     </nav>
   </header>
 
-  <main class="flex flex-wrap-reverse mt-8 md:justify-between md:py-12 md:px-24">
-    <div class="flex flex-col text-center md:text-start md:w-[39.25rem] mt-12">
-      <h1 class="text-[2.5rem] md:text-[5.5rem] font-bold md:mt-24 md:ml-24 leading-none">Make remote work</h1>
-      <div class="mt-4 md:mt-16 md:ml-24">
-        <p class="text-mediumGray text-center lg:text-left text-xl md:w-[26.188rem] max-w[31.25] px-[0.938rem] py-1 lg:px-0 lg:py-0">Get your team in sync, no matter your location. Streamline processes,
+  <main class="flex flex-wrap-reverse lg:flex-nowrap mt-8 md:justify-center md:pt-0 lg:justify-between lg:mt-0 lg:py-12 lg:px-24">
+    <div class="flex flex-col text-center mt-12 md:w-[39.25rem] lg:pl-8 lg:mt-0">
+      <h1 class="text-[2.5rem] md:text-[5.5rem] lg:text-8xl font-bold md:text-center lg:text-left lg:mt-24 leading-none">Make remote work</h1>
+      <div class="mt-8 md:mt-0 lg:mt-16">
+        <p class="text-mediumGray text-center md:font-semibold md:w-[30rem] md:mt-8 md:mx-auto md:p-0 lg:mt-0 lg:mx-0 lg:text-left text-xl lg:w-[28rem] max-w[31.25] px-4 lg:px-0">Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
       </div>
-      <a href="#" target="_blank" class="mt-8 self-center lg:self-start rounded-2xl md:mt-16 md:ml-[6rem] w-[10rem] bg-almostBlack text-almostWhite text-center py-[0.8rem] px-3 md:rounded hover:bg-almostWhite hover:text-almostBlack hover:border-almostBlack hover:border-[1px]"><span class="hidden">Opens in a new tab</span>Learn more</a> 
-      <div class="flex mt-16 md:ml-20 items-center justify-around">
+      <a href="#" target="_blank" class="mt-8 self-center md:ml-0 lg:self-start rounded-2xl lg:mt-16 w-[10rem] bg-almostBlack text-almostWhite text-center py-[0.8rem] px-3 hover:bg-almostWhite hover:text-almostBlack hover:border-almostBlack hover:border-[1px]"><span class="hidden">Opens in a new tab</span>Learn more</a> 
+      <div class="flex mt-16 items-center justify-around">
         <img class="w-[15%]" src="images/client-databiz.svg" alt="">
         <img class="w-[15%]" src="images/client-audiophile.svg" alt="">
         <img class="w-[15%]" src="images/client-meet.svg" alt="">
@@ -114,7 +122,7 @@
   
   </main>
 
-  <footer class="attribution">
+  <footer class="attribution mt-16">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/KwakuAldo" target="_blank">Aldo Efui Adabunu</a>.
   </footer>
